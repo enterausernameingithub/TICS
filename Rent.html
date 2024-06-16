@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Autor: Kayden Streete -->
+    <!-- 1º Medio C -->
+    <!-- RentCar -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Offers - RentCar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <link rel="icon" href="car_rental.png">
+    <style>
+        body {
+            background-color: lightslategray;
+            font-family: 'Mansalva', sans-serif;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        nav {
+            background-color: black;
+            padding: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th {
+            background-color: #C7AB70;
+        }
+        tr:nth-child(1) {
+            background-color: #CCCCCC;
+        }
+        tr:nth-child(2) {
+            background-color: #BC8796;
+        }
+        tr:nth-child(3) {
+            background-color: #87bcb7;
+        }
+        tr:nth-child(4) {
+            background-color: #b8bc87;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="rentcar.html">Home</a>
+            <a href="rent.html">Rent</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <img src="banner2.jpg" style="width: 100%; height: 258px;">
+    <hr style="height: 7px; background-color: brown; border: none;">
+    <table>
+        <tr>
+            <th>Car Type</th>
+            <th>Price per Day</th>
+            <th>Seats</th>
+            <th>Fuel Type</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td>SUV</td>
+            <td>$50</td>
+            <td>5</td>
+            <td>Diesel</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Sedan</td>
+            <td>$40</td>
+            <td>5</td>
+            <td>Petrol</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Minivan</td>
+            <td>$70</td>
+            <td>7</td>
+            <td>Diesel</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Convertible</td>
+            <td>$80</td>
+            <td>4</td>
+            <td>Petrol</td>
+            <td>Unavailable</td>
+        </tr>
+    </table>
+    <audio controls>
+        <source src="vehicle.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <iframe src="https://www.mazda.cl/" width="700" height="350" style="border: none;"></iframe>
+    <div class="footer">
+        &copy; 2024 RentCar
+    </div>
+</body>
+</html>

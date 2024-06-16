@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Autor: Kayden Streete -->
+    <!-- 1º Medio C -->
+    <!-- RentCar -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentCar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <link rel="icon" href="car_rental.png">
+    <style>
+        body {
+            background-color: lightslategray;
+            font-family: 'Mansalva', sans-serif;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        nav {
+            background-color: black;
+            padding: 10px 0;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .offers img {
+            margin: 20px;
+        }
+        .offer-title {
+            font-size: large;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="rentcar.html">Home</a>
+            <a href="rent.html">Rent</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div align="center">
+        <img src="banner1.jpg" height="258" style="width: 85%;">
+        <img src="europa.png" usemap="#europa-map">
+        <map name="europa-map">
+            <area shape="rect" coords="34,44,270,350" alt="Spain" href="https://www.hertz.es/p/alquiler-de-coches/espana" target="_blank">
+            <area shape="rect" coords="290,172,333,250" alt="France" href="https://www.pepecar.com/alquiler-coches/francia/montpellier/" target="_blank">
+            <area shape="rect" coords="337,300,44,450" alt="UK" href="https://www.sixt.co.uk/betahome/#/" target="_blank">
+        </map>
+        <p>We offer many different car rental options</p>
+        <a href="https://www.hertz.cl/" target="_blank"><img src="Hertz.png" height="85"></a>
+        <a href="https://www.avis.cl/" target="_blank"><img src="AVIS.png" height="85"></a>
+        <a href="https://www.europcar.cl/" target="_blank"><img src="Europcar.png" height="85"></a>
+        <p style="font-size: xx-large;">Offer of the Week</p>
+        <div class="offers">
+            <div>
+                <p class="offer-title">SUV</p>
+                <a href="rent.html"><img src="suv.png" height="150"></a>
+            </div>
+            <div>
+                <p class="offer-title">Minivan</p>
+                <a href="rent.html"><img src="minivan.png" height="200"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 RentCar
+    </div>
+</body>
+</html>

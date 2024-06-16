@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Autor: Kayden Streete -->
+    <!-- 1º Medio C -->
+    <!-- RentCar -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - RentCar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <link rel="icon" href="car_rental.png">
+    <style>
+        body {
+            background-color: lightslategray;
+            font-family: 'Mansalva', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: purple;
+            text-decoration: none;
+        }
+        nav {
+            background-color: black;
+            padding: 10px 0;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-table {
+            width: 100%;
+            margin: 20px 0;
+        }
+        .contact-table td {
+            vertical-align: top;
+            padding: 10px;
+        }
+        .contact-form {
+            margin-top: 20px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .contact-form h2 {
+            margin-bottom: 10px;
+            font-size: large;
+            font-weight: bold;
+        }
+        .contact-form div {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        .contact-form div.section {
+            margin-bottom: 30px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form input, .contact-form textarea, .contact-form select {
+            width: calc(100% - 20px);
+            padding: 8px;
+            box-sizing: border-box;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: gray;
+        }
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+        .title {
+            font-size: x-large;
+            font-weight: bold;
+            text-align: center;
+        }
+        .red-line {
+            height: 7px;
+            background-color: brown;
+            margin: 20px 0;
+        }
+        .contact-info {
+            font-size: large;
+            font-weight: bold;
+            text-align: left;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="rentcar.html">Home</a>
+            <a href="rent.html">Rent</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div align="center">
+        <div class="banner">
+            <img src="contact-us.jpg" height="400" width="600">
+        </div>
+        <div class="title">Contacto</div>
+        <div class="red-line"></div>
+        <table class="contact-table" align="center">
+            <tr>
+                <td>
+                    <div class="contact-info">
+                        <p>Telephone: +1 (555) 123-4567</p>
+                        <p>Email: info@rentcar.com</p>
+                        <p>Address: 123 Main Street, Anytown, USA</p>
+                    </div>
+                </td>
+                <td>
+                    <img src="map.png" height="300">
+                </td>
+            </tr>
+        </table>
+        <div class="contact-form">
+            <div class="section">
+                <h2>Datos Personales</h2>
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Ubicación</h2>
+                <div>
+                    <label for="location">País:</label>
+                    <select id="location" name="location">
+                        <option value="Chile">Chile</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Other">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="not-listed">País NO Listado:</label>
+                    <input type="text" id="not-listed" name="not-listed">
+                </div>
+            </div>
+            <div class="section">
+                <h2>Mensaje</h2>
+                <div>
+                    <label for="subject">Asunto:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 RentCar
+    </div>
+</body>
+</html>
